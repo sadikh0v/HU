@@ -21,10 +21,10 @@ const carouselImages = document.querySelectorAll(".carousel-slide img");
 const prevBtn = document.querySelector("#prevBtn");
 const nextBtn = document.querySelector("#nextBtn");
 
-let counter = 1;
+let counter = 0;
 const size = carouselImages[0].clientWidth;
 
-carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
+// carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
 
 nextBtn.addEventListener("click", () => {
   if (counter >= carouselImages.length - 1) return;

@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
 
   <body>
@@ -20,16 +20,14 @@
 
     <header class="header">
       <div class="main">
-        <div class="site-logo">
-          <a href="main.html">
-            <img src="img/logo1.png" alt="logo" />
-          </a>
-        </div>
-        <div class="main-2">
-          <a href="#">Features</a>
-          <a href="#">Benefits</a>
-          <a href="#">How to use</a>
-          <a href="#">Clients</a>
+        <a href="/">
+          <img class="site-logo" src="img/logo1.png" alt="logo" />
+        </a>
+       <div class="main-2">
+          <a href="#features">Features</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#use">How to use</a>
+          <a href="#clients">Clients</a>
         </div>
       </div>
     </header>
@@ -40,48 +38,58 @@
       <i class="fa fa-arrow-left" id="prevBtn"></i>
       <i class="fa fa-arrow-right" id="nextBtn"></i>
       <div class="carousel-slide">
-        <img src="img/main.png" id="lastClone">
-        <img src="img/main.png">
-        <img src="img/main.png">
-        <img src="img/main.png">
-        <img src="img/main.png">
-        <img src="img/main.png">
-        <img src="img/main.png" id="firstClone">
+        <div class="carousel-slide-img" style="background: url(img/benefit-4.png);" id="lastClone"></div>
+        <div class="carousel-slide-img" style="background: url(img/benefit-1.png);"></div>
+        <div class="carousel-slide-img" style="background: url(img/benefit-2.png);"></div>
+        <div class="carousel-slide-img" style="background: url(img/benefit-3.png);"></div>
+        <div class="carousel-slide-img" style="background: url(img/benefit-4.png);"></div>
+        <div class="carousel-slide-img" style="background: url(img/benefit-1.png);" id="firstClone"></div>
       </div>
     </div>
+    
+    
 
     <!-- Features section     -->
 
-    <section class="features">
+    <section id="features" class="features">
       <div class="features-row">
-        <h1>Our Features</h1>
+        <h1>Funksional</h1>
       </div>
       <div class="features-row">
         <div class="features-column">
           <div class="features-card">
             <div class="features-icon">
-              <i class="fa fa-user"></i>
+              <i class="fa fa-question" aria-hidden="true"></i>
             </div>
-            <h3>User Friendly</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aliquam reiciendis molestiae at cum accusamus ratione suscipit, nobis nemo sunt.</p>
+            <h3>Sorğuların yaradın</h3>
+            <p>Xidmət keyfiyyətinin artırılması məqsədilə müştəri məmnuniyyətinin ölçülməsi və ya hər-hansı sorğuların keçirilməsi üçün formaların yaradılması və kateqoriyalara bölünməsi imkanı admin paneldə yaradılmışdır</p>
           </div>
         </div>
         <div class="features-column">
           <div class="features-card">
             <div class="features-icon">
-              <i class="fa fa-shield-halved"></i>
+              <i class="fa fa-link" aria-hidden="true"></i>
             </div>
-            <h3>Super Secure</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aliquam reiciendis molestiae at cum accusamus ratione suscipit, nobis nemo sunt.</p>
+            <h3>Linki göndərin</h3>
+            <p>Sorğuların aparılması üçün unikal linklərin generasiyası mümkündür. Bu funksional sorğu formalarını yüngülləşdirir və statistikanı daha dəqiq aparmağa imkan verir.</p>
           </div>
         </div>
         <div class="features-column">
           <div class="features-card">
             <div class="features-icon">
-              <i class="fa fa-headset"></i>
+              <i class="fa fa-bar-chart" aria-hidden="true"></i>
             </div>
-            <h3>Quick Support</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aliquam reiciendis molestiae at cum accusamus ratione suscipit, nobis nemo sunt.</p>
+            <h3>Hesabat əldə edin</h3>
+            <p>Sorğunun analitik hesabatının aparılması məqsədilə cavabların Excel formatına export olunması və ya infoqrafika şəklində statistikanın əldə olunması imkanı mövcuddur.</p>
+          </div>
+        </div>
+        <div class="features-column">
+          <div class="features-card">
+            <div class="features-icon">
+              <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> 
+            </div>
+            <h3>Dərhal məlumat alın</h3>
+            <p>Müştəri xidməti mənfi dəyərləndirsə və ya şərh edərsə HU Reacts sorğu formaları üzrə məsul şəxslərin elektron ünvanına dərhal məlumat ötürür.</p>
           </div>
         </div>
       </div>
@@ -89,43 +97,41 @@
 
     <!-- Benefits -->
 
-    <div class="benefits">
-      <h1>Benefits</h1>
+    <div id="benefits" class="benefits">
+      <h1>Üstünlüklər</h1>
+      <h2>Hu Reacts sorğu formaları...</h2>
       <div class="benefits-container">
         <div class="card">
           <div class="img">
-            <img src="" alt="fotka">
+            <img src="img/benefit-1.png" alt="">
           </div>
           <div class="top-text">
-            <div class="text-main">Benefit-1</div>
-            <p>Lorem ipsum dolor sit</p>
+            <div class="text-main">Sizin korporativ üslubunuza uyğunlaşır</div>
           </div>
           <div class="bottom-text">
-            <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio animi quidem fugit. Tempore excepturi modi hic, iste aspernatur amet facilis.</div>
+            <div class="text">Standart formaların mövcud olmasından əlavə rəng, üslüb və dizayn sizin korporativ qaydalara uyğun olaraq formalaşa bilər. Sualların yaradılması, onun mütləq olub olmaması, görünüşün idarə edilməsində sizə kömək olacaq düstürlar mövcuddur.</div>
           </div>
         </div>
         <div class="card">
           <div class="img">
-            <img src="" alt="fotka">
+            <img src="img/benefit-2.png" alt="">
           </div>
           <div class="top-text">
-            <div class="text-main">Benefit-2</div>
-            <p>Lorem ipsum dolor sit</p>
+            <div class="text-main">İki fərqli dildə tərtib oluna bilir</div>
           </div>
           <div class="bottom-text">
-            <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio animi quidem fugit. Tempore excepturi modi hic, iste aspernatur amet facilis.</div>
+            <div class="text">Böyük müştəri kütləsinə uyğunlaşmaq və bütün seqmentlərə əlçatan olmaq üçün sorğu formalarını iki dildə, yəni Azərbaycan və İngiliscə tərtib etmək olar.</div>
           </div>
         </div>
         <div class="card">
           <div class="img">
-            <img src="" alt="fotka">
+            <img src="img/benefit-4.png" alt="">
           </div>
           <div class="top-text">
-            <div class="text-main">Benefit-3</div>
-            <p>Lorem ipsum dolor sit</p>
+            <div class="text-main">Məmnuniyyət indeksi formalaşdırır</div>
           </div>
           <div class="bottom-text">
-            <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio animi quidem fugit. Tempore excepturi modi hic, iste aspernatur amet facilis.</div>
+            <div class="text">Sorğuların cavablarının sistem tərəfindən avtomatik analizi nəticəsində məmnuniyyət indeksi formalaşdır. Beləliklə siz həm müsbət, həm mənfi rəy vermis müştərilərin sayını bilib, xidmət keyfiyyətinin artırılması üçün lazımlı addımların atılmasını təmin edə biləcəksiniz.</div>
           </div>
         </div>
       </div>
@@ -133,7 +139,14 @@
 
     <!-- Clients -->
 
-    <div class="clients">
+    <div id="clients" class="clients">
+      <h1>Müştərilərimiz</h1>
+      <div class="clients-slide">
+        <img src="img/azersigorta.png" alt="" />
+        <img src="img/pasha.png" alt="" />
+        <img src="img/medicalclub.png" alt="" />
+        <img src="img/ateshgah.png" alt="" />
+      </div>
       <div class="clients-slide">
         <img src="img/azersigorta.png" alt="" />
         <img src="img/pasha.png" alt="" />
@@ -144,41 +157,31 @@
 
     <!-- How to use section -->
 
-    <section class="use">
+    <section id="use" class="use">
       <h2 class="use-title">FAQ</h2>
       <div class="faq">
         <div class="question">
-          <h3>What is HU Reacts?</h3>
+          <h3>Hu Reacts nədir?</h3>
           <svg width="15" height="10" viewBox="0 0 42 25">
             <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
           </svg>
         </div>
         <div class="answer">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis nihil vitae, necessitatibus tempore aliquid eligendi ad expedita fuga quaerat deserunt.</p>
+          <p>LHu Reacts müştəri məmnuniyyətinin ölçülməsi və ya sorğurların keçirilməsin məqsədilə formaların yaradılması və sorğu formalarına uyğun doldurulmuş cavabların detallı analizi, statistikasına nəzarət etmək imkanı verən platformadır.</p>
         </div>
       </div>
       <div class="faq">
         <div class="question">
-          <h3>It is easy to use</h3>
+          <h3>Sorğunun yaradılması üçün hara müraciət etməliyəm?</h3>
           <svg width="15" height="10" viewBox="0 0 42 25">
             <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
           </svg>
         </div>
         <div class="answer">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis nihil vitae, necessitatibus tempore aliquid eligendi ad expedita fuga quaerat deserunt.</p>
+          <p>LHu Reacts xidmətlərindən yararlanmaq istəyirsinizsə XXXXX@hureacts.com mail ünvanına müraciət edə bilərsiniz</p>
         </div>
       </div>
-      <div class="faq">
-        <div class="question">
-          <h3>Another question</h3>
-          <svg width="15" height="10" viewBox="0 0 42 25">
-            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <div class="answer">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis nihil vitae, necessitatibus tempore aliquid eligendi ad expedita fuga quaerat deserunt.</p>
-        </div>
-      </div>
+      <h1>Video təlimat</h>
       <div class="video-container">
         <div class="video">
           <div class="video-1">
@@ -234,6 +237,6 @@
       </div>
     </footer>
 
-  <script src="js.js"></script>
+  <script src="js/index.js"></script>
   </body>
 </html>
