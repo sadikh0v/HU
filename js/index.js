@@ -17,14 +17,12 @@ faqs.forEach((faq) => {
 // Gallery
 
 const carouselSlide = document.querySelector(".carousel-slide");
-const carouselImages = document.querySelectorAll(".carousel-slide img");
+const carouselImages = document.querySelectorAll(".carousel-slide-img");
 const prevBtn = document.querySelector("#prevBtn");
 const nextBtn = document.querySelector("#nextBtn");
 
 let counter = 0;
 const size = carouselImages[0].clientWidth;
-
-// carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
 
 nextBtn.addEventListener("click", () => {
   if (counter >= carouselImages.length - 1) return;
