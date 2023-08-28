@@ -1,0 +1,641 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Sintex || Template Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+    .added1 {	background-color: #336600;
+	color: #FFFFFF;
+}
+    </style>
+ 
+	<!-- Syntax Highlighter -->
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Sintex&rdquo; Documentation by &ldquo;ThemeEaster&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Sintex&rdquo;</h1>
+		
+        <div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+			  <p class="prepend-top">
+<strong>
+					Created:01/10/2018<br>
+				By: <a href="http://www.ThemeEaster.com">ThemeEaster</a><br>
+				<br>
+			    </strong><strong><br>
+		        </strong></p>
+    </div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please contact our support. Thanks so much!</p>
+	</div>
+	  </div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#temp-components">Template Components</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+			
+			<li><a href="#php">PHP Code Explanation</a> <em class="quiet small">(If your theme uses PHP)</em></li>
+			<li><a href="#">Flash</a>  <em class="quiet small">(If your theme uses Flash)</em></li>
+			<li><a href="#">API Usage</a> <em class="quiet small">(If your theme uses an API)</em></li>
+			<li><a href="#">Any additional unique features that need an overview</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>Below is the general HTML structure of the landing page.<br>
+		</p>              
+
+	  <h4 id="front-html-structures"><strong>1) index.html File Structure</strong> - <a href="#toc">top</a></h4>
+	  
+      <p>The template page's layout consist of top that show the logo and main menu, hero section  that show background image, beforecontent that show some amaizing content,  about section contain about your some info & feature, service section contained all services, work section you can showcase your portfolio with awesome animation, skills section here you can add some skills, team section is for your team members, testimonial section here you can published your customer reviews, call to action this for call to action content, contact section here you can put your contact information & footer that show copyright information.</p>
+        
+<pre class="brush: html;" id="front-html-structure-pre">
+&lt;!doctype html>
+&lt;!--[if lt IE 7]>      &lt;html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> &lt;![endif]-->
+&lt;!--[if IE 7]>         &lt;html class="no-js lt-ie9 lt-ie8" lang=""> &lt;![endif]-->
+&lt;!--[if IE 8]>         &lt;html class="no-js lt-ie9" lang=""> &lt;![endif]-->
+&lt;!--[if gt IE 8]>&lt;!--> &lt;html class="no-js" lang="en"> &lt;!--&lt;![endif]-->
+    &lt;head>
+        &lt;meta charset="utf-8">
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1">
+		&lt;meta name="description" content="Sintex product landing page template">
+        &lt;meta name="author" content="ThemeEaster">
+       
+        &lt;title>Sintex | product landing page&lt;/title>
+        
+		&lt;link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+		
+		&lt;!-- Font Awesome CSS -->
+        &lt;link rel="stylesheet" href="css/font-awesome.min.css">
+        &lt;!-- Themify Icons CSS -->
+        &lt;link rel="stylesheet" href="css/themify-icons.css">
+        &lt;!-- Elegant Font Icons CSS -->
+        &lt;link rel="stylesheet" href="css/elegant-font-icons.css">
+        &lt;!-- Elegant Line Icons CSS -->
+        &lt;link rel="stylesheet" href="css/elegant-line-icons.css">
+		&lt;!-- Bootstrap CSS -->
+        &lt;link rel="stylesheet" href="css/bootstrap.min.css">
+        &lt;!-- Venobox CSS -->
+        &lt;link rel="stylesheet" href="css/venobox/venobox.css">
+        &lt;!-- Slicknav CSS -->
+        &lt;link rel="stylesheet" href="css/slicknav.min.css">
+        &lt;!-- animate CSS -->
+        &lt;link rel="stylesheet" href="css/animate.min.css">
+		&lt;!-- OWL-Carousel CSS -->
+        &lt;link rel="stylesheet" href="css/owl.carousel.css">
+        &lt;!-- Swiper CSS -->
+        &lt;link rel="stylesheet" href="css/swiper.min.css">
+		&lt;!-- Main CSS -->
+        &lt;link rel="stylesheet" href="css/main.css">
+		&lt;!-- Responsive CSS -->
+        &lt;link rel="stylesheet" href="css/responsive.css">
+
+        &lt;script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js">&lt;/script>
+    &lt;/head>
+    &lt;body data-spy="scroll" data-target="#navmenu" data-offset="70">
+        &lt;!--[if lt IE 8]>
+            &lt;p class="browserupgrade">You are using an &lt;strong>outdated&lt;/strong> browser. Please &lt;a href="http://browsehappy.com/">upgrade your browser&lt;/a> to improve your experience.&lt;/p>
+        &lt;![endif]-->
+        
+        &lt;div class="site-preloader-wrap">
+            &lt;div class="spinner">&lt;/div>
+        &lt;/div>&lt;!-- Preloader -->
+        
+        &lt;header id="header" class="header-section">
+            
+		&lt;/header>&lt;!-- Header Section-->  
+		
+		&lt;section id="home" class="hero-section bd-bottom">
+		    
+		&lt;/section>&lt;!-- Hero Section-->
+        
+        &lt;section class="promo-section bg-grey bd-bottom padding">
+            
+        &lt;/section>&lt;!-- Promo Section-->
+        
+        &lt;section id="features" class="feature-section padding">
+            
+        &lt;/section>&lt;!-- Feature Section -->
+        
+        &lt;section id="works" class="how-it-works-section padding">
+            
+        &lt;/section>&lt;!-- How It Works Section -->
+        
+        &lt;section class="content-section bd-bottom padding">
+            
+        &lt;/section>&lt;!-- Content Section -->
+        
+        &lt;section id="products" class="product-section bg-grey bd-bottom padding">
+            
+        &lt;/section>&lt;!-- Product Section -->
+        
+        &lt;section id="pricing" class="pricing-section bd-bottom padding">
+            
+        &lt;/section>&lt;!-- Pricing Section -->
+        
+        &lt;section id="testimonial" class="testimonial-section bg-grey bd-bottom padding">
+            
+        &lt;/section>&lt;!-- Testimonial Section -->
+        
+        &lt;section id="faq" class="faq-section bd-bottom padding">
+            
+        &lt;/section>&lt;!-- ./Faq Section -->
+        
+        &lt;div class="sponsor-section bd-bottom">
+            
+        &lt;/div>&lt;!-- ./Sponsor Section -->
+        
+        &lt;section class="cta-section">
+            
+        &lt;/section>&lt;!-- ./CTA Section -->
+        
+        &lt;section class="widget-section padding">
+            
+        &lt;/section>&lt;!-- ./Widget Section -->                                
+		    
+		&lt;footer class="footer-section align-center">
+			
+		&lt;/footer>&lt;!-- /Footer Section -->
+
+		&lt;a data-scroll href="#home" id="scroll-to-top">&lt;i class="arrow_carrot-up">&lt;/i>&lt;/a>
+	
+		&lt;!-- jQuery Lib -->
+		&lt;script src="js/vendor/jquery-1.12.4.min.js">&lt;/script>
+		&lt;!-- Bootstrap JS -->
+		&lt;script src="js/vendor/bootstrap.min.js">&lt;/script>
+		&lt;!-- Tether JS -->
+		&lt;script src="js/vendor/tether.min.js">&lt;/script>
+		&lt;!-- Slicknav JS -->
+		&lt;script src="js/vendor/jquery.slicknav.min.js">&lt;/script>
+		&lt;!-- OWL-Carousel JS -->
+		&lt;script src="js/vendor/owl.carousel.min.js">&lt;/script>
+		&lt;!-- Smooth Scroll JS -->
+		&lt;script src="js/vendor/smooth-scroll.min.js">&lt;/script>
+		&lt;!-- Ajaxchimp JS -->
+		&lt;script src="js/vendor/jquery.ajaxchimp.min.js">&lt;/script>
+		&lt;!-- Wow JS -->
+		&lt;script src="js/vendor/wow.min.js">&lt;/script>
+		&lt;!-- Main JS -->
+		&lt;script src="js/main.js">&lt;/script>
+
+    &lt;/body>
+&lt;/html>
+        </pre>
+       <hr>
+		
+
+		<h3 id="temp-components"><strong>B) Template Components</strong> - <a href="#toc">top</a></h3>
+		<p>The site is made of many sections like header, slider, testimonials, services and more...</p>
+
+<h4 id="slider"><strong>1) Header Section</strong> - <a href="#toc">top</a></h4>
+
+
+<pre class="brush: html;">
+&lt;header id="header" class="header-section">
+            &lt;div class="container">
+                &lt;nav class="navbar">
+                    &lt;a href="#" class="navbar-brand">&lt;img src="img/logo.png" alt="Sintex">&lt;/a>
+                    &lt;div class="d-flex menu-wrap">
+                       &lt;div id="navmenu" class="mainmenu">
+                           &lt;ul class="nav">
+                                &lt;li >&lt;a data-scroll class="nav-link active" href="#home">Home &lt;span class="sr-only">(current)&lt;/span>&lt;/a>&lt;/li>
+                                &lt;li>&lt;a data-scroll class="nav-link" href="#features">Features&lt;/a>&lt;/li>
+                                &lt;li>&lt;a data-scroll class="nav-link" href="#works">How it Works&lt;/a>&lt;/li>
+                                &lt;li>&lt;a data-scroll class="nav-link" href="#products">Products&lt;/a>&lt;/li>
+                                &lt;li>&lt;a data-scroll class="nav-link" href="#pricing">Pricing&lt;/a>&lt;/li>
+                                &lt;li>&lt;a data-scroll class="nav-link" href="#testimonial">Reviews&lt;/a>&lt;/li>
+                                &lt;li>&lt;a data-scroll class="nav-link" href="#faq">Faq&lt;/a>&lt;/li>
+                            &lt;/ul>
+                            &lt;a href="#" class="default-btn">Order Now&lt;/a>
+                       &lt;/div>
+                    &lt;/div>
+                &lt;/nav>
+            &lt;/div>
+		&lt;/header>&lt;!-- Header Section-->  
+</pre>
+        
+        
+	  <hr>
+<h4 id="portfolio"><strong>2) Hero Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section id="home" class="hero-section bd-bottom">
+		    &lt;div class="container">
+                &lt;div class="hero-content">
+                    &lt;h1>Sintex is the best  &lt;br>landing page to showcause &lt;br> your product.&lt;/h1>
+                    &lt;p>Sintex camera is an optical instrument for recording or capturing images, &lt;br> which may be stored locally, transmitted to another location.&lt;/p>
+                    &lt;a href="#" class="default-btn">Order Now&lt;/a>
+                &lt;/div>
+                &lt;div class="hero-cam">&lt;/div>
+		    &lt;/div>
+		&lt;/section>&lt;!-- Hero Section-->
+</pre>
+
+<hr>
+
+<h4 id="portfolio"><strong>3) Promo Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section class="promo-section bg-grey bd-bottom padding">
+            &lt;div class="container">
+                &lt;div class="promo-wrap row">
+                    &lt;div class="col-md-3 col-sm-6 xs-padding">
+                        &lt;div class="promo-content text-center">
+                            &lt;i class="icon-camera">&lt;/i>
+                            &lt;h3>Camera Resulation&lt;/h3>
+                            &lt;p>Sintex camera is an optical instrument for recording or capturing images&lt;/p>
+                        &lt;/div>
+                    &lt;/div>&lt;!-- Promo 1 -->
+                &lt;/div>
+            &lt;/div>
+        &lt;/section>&lt;!-- Promo Section-->
+</pre>
+
+<br>
+
+<hr>
+
+<h4 id="portfolio"><strong>4) Feature Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section id="features" class="feature-section padding">
+            &lt;div class="container">
+                &lt;div class="section-heading text-center">
+                   &lt;h2>Stunning features.&lt;/h2>
+                   &lt;p>Sintex camera is an optical instrument for capturing super images.&lt;/p>
+                &lt;/div>
+                &lt;div class="feature-wrap row">
+                    &lt;div class="col-md-4">
+                        &lt;ul class="feature-content feature-left text-right">
+                            &lt;li>
+                                &lt;h3>Fast Connect&lt;/h3>
+                                &lt;p>Sintex camera is an optical instrument &lt;br> for capturing super images.&lt;/p>
+                            &lt;/li>
+                        &lt;/ul>
+                    &lt;/div>
+                &lt;/div>
+                &lt;div class="feature-cam">&lt;/div>
+            &lt;/div>
+        &lt;/section>&lt;!-- Feature Section -->
+</pre>
+
+<br>
+
+<hr />
+
+<h4 id="portfolio"><strong>5) How It Works Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section id="works" class="how-it-works-section padding">
+            &lt;div class="container">
+                &lt;div class="how-wrap row">
+                    &lt;div class="col-md-4 col-sm-6 xs-padding">
+                        &lt;div class="how-content text-center">
+                            &lt;i class="icon-anchor">&lt;/i>
+                            &lt;h3>Connect Device&lt;/h3>
+                            &lt;p>Sintex camera is an optical instrument &lt;br> for capturing super images.&lt;/p>
+                        &lt;/div>
+                        &lt;div class="arrow">&lt;/div>
+                    &lt;/div>&lt;!-- Item-1 -->
+                &lt;/div>
+            &lt;/div>
+        &lt;/section>&lt;!-- How It Works Section -->
+</pre>
+
+<br>
+
+<hr />
+
+<h4 id="portfolio"><strong>5) Content Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section class="content-section bd-bottom padding">
+            &lt;div class="container">
+                &lt;div class="content-wrap row">
+                    &lt;div class="col-md-6 xs-padding">
+                        &lt;div class="content-details">
+                            &lt;h2>Elegant designs with &lt;br> very powerful options panel.&lt;/h2>
+                            &lt;p>Sintex camera is an optical for instrument for recording capturing more images, may be transmitted to another location, or both. The images may be individual the best camera in the world for photographs.&lt;/p>
+                            &lt;a href="#" class="default-btn">Order Now&lt;/a>
+                        &lt;/div>
+                    &lt;/div>
+                    &lt;div class="col-md-6 xs-padding text-center">
+                        &lt;img src="img/content-bg-1.jpg" alt="img">
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/section>&lt;!-- Content Section -->
+</pre>
+
+<br>
+
+<hr />
+
+<h4 id="portfolio"><strong>6) Product Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section id="products" class="product-section bg-grey bd-bottom padding">
+    &lt;div class="container">
+        &lt;div class="section-heading text-center mb-40">
+            &lt;h2>Collect your product.&lt;/h2>
+            &lt;p>Sintex camera is an optical instrument for capturing super images.&lt;/p>
+        &lt;/div>&lt;!-- Section Heading -->
+        &lt;div id="product-carousel" class="product-carousel owl-carousel">
+            &lt;div class="product-item">
+                &lt;div class="product-thumb">
+                   &lt;img src="img/product-1.jpg" alt="img">
+                &lt;/div>
+                &lt;div class="cart">
+                    &lt;a href="#" class="cart-btn">Add to Cart&lt;/a>
+                &lt;/div>
+                &lt;div class="product-content text-center">
+                    &lt;h3>&lt;a href="#">Sintex Y705 camera&lt;/a>&lt;/h3>
+                    &lt;p>Availity: &lt;span class="stock">In Stock&lt;/span>&lt;/p>
+                    &lt;span class="price">$499&lt;/span>
+                    &lt;ul class="rattings">
+                        &lt;li>&lt;i class="fa fa-star">&lt;/i>&lt;/li>
+                        &lt;li>&lt;i class="fa fa-star">&lt;/i>&lt;/li>
+                        &lt;li>&lt;i class="fa fa-star">&lt;/i>&lt;/li>
+                        &lt;li>&lt;i class="fa fa-star">&lt;/i>&lt;/li>
+                        &lt;li>&lt;i class="fa fa-star">&lt;/i>&lt;/li>
+                    &lt;/ul>
+                &lt;/div>
+            &lt;/div>&lt;!-- Product-1 -->
+        &lt;/div>
+    &lt;/div>
+&lt;/section>&lt;!-- Product Section -->
+</pre>
+
+<br>
+
+<hr />
+
+<h4 id="portfolio"><strong>7) Pricing Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section id="pricing" class="pricing-section bd-bottom padding">
+    &lt;div class="container">
+        &lt;div class="section-heading text-center mb-40">
+            &lt;h2>Pick your best pricing.&lt;/h2>
+            &lt;p>Sintex camera is an optical instrument for capturing super images.&lt;/p>
+        &lt;/div>
+        &lt;div class="pricing-wrap row">
+            &lt;div class="col-md-3 col-sm-6 xs-padding">
+                &lt;div class="pricing-box">
+                    &lt;div class="pricing-head">
+                        &lt;h2>Free!&lt;/h2>
+                        &lt;span>For First 30 Days!&lt;/span>
+                    &lt;/div>
+                    &lt;ul class="pricing-mid">
+                        &lt;li>&lt;i class="fa fa-check">&lt;/i>One User&lt;/li>
+                        &lt;li>&lt;i class="fa fa-check">&lt;/i>50+ Projects&lt;/li>
+                        &lt;li>&lt;i class="fa fa-check">&lt;/i>Free Backups&lt;/li>
+                        &lt;li>&lt;i class="fa fa-check">&lt;/i>Unlimited Features&lt;/li>
+                        &lt;li>&lt;i class="fa fa-check">&lt;/i>Lifetime Support&lt;/li>
+                    &lt;/ul>
+                    &lt;div class="pricing-footer">
+                        &lt;a href="#" class="default-btn">Purchase Now&lt;/a>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div> &lt;!-- Pricing-1 -->
+        &lt;/div>
+    &lt;/div>
+&lt;/section>&lt;!-- Pricing Section -->
+</pre>
+
+<hr />
+
+
+<h4 id="portfolio"><strong>8)Pricing Section </strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section id="testimonial" class="testimonial-section bg-grey bd-bottom padding">
+            &lt;div class="container">
+                &lt;div class="section-heading text-center mb-40">
+                    &lt;h2>What people says.&lt;/h2>
+                    &lt;p>Sintex camera is an optical instrument for capturing super images.&lt;/p>
+                &lt;/div>
+                &lt;div id="testimonial-carousel" class="testimonial-carousel owl-carousel">
+                    &lt;div class="testi-item">
+                        &lt;p>Sintex camera is an optical for instrument for recording capturing images, which may be transmitted to another location, or both. The images may be individual still photographs.&lt;/p>
+                        &lt;div class="testi-details">
+                            &lt;div class="testi-thumb">
+                                &lt;img src="img/testi-1.jpg" alt="img">
+                            &lt;/div>
+                            &lt;div class="reviews">
+                                &lt;h3>Michel Brown&lt;/h3>
+                                &lt;ul class="rattings">
+                                    &lt;li>&lt;i class="fa fa-star">&lt;/i>&lt;/li>
+                                    &lt;li>&lt;i class="fa fa-star">&lt;/i>&lt;/li>
+                                    &lt;li>&lt;i class="fa fa-star">&lt;/i>&lt;/li>
+                                    &lt;li>&lt;i class="fa fa-star">&lt;/i>&lt;/li>
+                                    &lt;li>&lt;i class="fa fa-star">&lt;/i>&lt;/li>
+                                &lt;/ul>
+                            &lt;/div>
+                        &lt;/div>
+                    &lt;/div>&lt;!-- Item-1 -->
+                &lt;/div>
+            &lt;/div>
+        &lt;/section>&lt;!-- Testimonial Section -->
+</pre>
+
+<hr />
+
+<h4 id="portfolio"><strong>13) Faq Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section id="faq" class="faq-section bd-bottom padding">
+    &lt;div class="container">
+        &lt;div class="section-heading text-center mb-40">
+            &lt;h2>Frequently asked questions?&lt;/h2>
+            &lt;p>Sintex camera is an optical instrument for capturing super images.&lt;/p>
+        &lt;/div>
+        &lt;div class="faq-wrap row">
+            &lt;div class="col-md-6 padding-15">
+                &lt;h3>1. How can I install this?&lt;/h3>
+                &lt;p>Sintex camera is an optical for instrument for recording capturing more images, may be transmitted to another location, or both. The images may be individual the best camera in the world for photographs.&lt;/p>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/section>&lt;!-- ./Faq Section -->
+</pre>
+    <br>
+<hr />
+
+<h4 id="portfolio"><strong>14) Sponsor Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;div class="sponsor-section bd-bottom">
+            &lt;div class="container">
+                &lt;ul id="sponsor-carousel" class="sponsor-items owl-carousel">
+                    &lt;li class="sponsor-item">
+                        &lt;img src="img/sponsor-1.png" alt="sponsor-image">
+                    &lt;/li>
+                &lt;/ul>
+            &lt;/div>
+        &lt;/div>&lt;!-- ./Sponsor Section -->
+</pre>  
+
+  <br>
+<hr />
+
+<h4 id="portfolio"><strong>15) CTA Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section class="cta-section">
+    &lt;div class="container">
+        &lt;div class="row cta-content">
+            &lt;div class="col-md-6">
+                &lt;h2>One of the best product for the smart people.&lt;/h2>
+            &lt;/div>
+            &lt;div class="col-md-6 text-right">
+                &lt;a href="#" class="default-btn">Get Your Product&lt;/a>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/section>&lt;!-- ./CTA Section -->
+</pre>  
+  
+<br>
+<hr />
+
+<h4 id="portfolio"><strong>16) Widget Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section class="widget-section padding">
+    &lt;div class="container">
+        &lt;div class="widget-content text-center">
+            &lt;img class="mb-20" src="img/logo.png" alt="img">
+            &lt;p>Sintex camera is an optical for instrument &lt;br> for recording capturing more images  may be transmitted to &lt;br> another location, or both.&lt;/p>
+            &lt;ul class="social-share">
+                &lt;li>&lt;a href="#">&lt;i class="fa fa-facebook">&lt;/i>&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#">&lt;i class="fa fa-twitter">&lt;/i>&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#">&lt;i class="fa fa-google-plus">&lt;/i>&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#">&lt;i class="fa fa-pinterest">&lt;/i>&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#">&lt;i class="fa fa-instagram">&lt;/i>&lt;/a>&lt;/li>
+            &lt;/ul>
+        &lt;/div>
+    &lt;/div>
+&lt;/section>&lt;!-- ./Widget Section --> 
+</pre>   
+<br>
+<hr />
+
+<h4 id="portfolio"><strong>17) Footer Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;footer class="footer-section align-center">
+    &lt;div class="container">
+        &lt;p>&copy; 2018 Sintex Powered by ThemeEaster&lt;/p>
+    &lt;/div>
+&lt;/footer>&lt;!-- /Footer Section -->
+</pre>   
+
+  <br>
+
+<p>&nbsp;</p>
+
+	  <hr>
+		<h3 id="cssFiles"><strong>C) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+		 <p>These are the css files:</p>
+		<ol>
+			<li>bootstrap.min.css</li> 
+			<li>animate.min.css</li> 
+			<li>elegant-font-icons.css</li> 
+			<li>elegant-line-icons.css</li> 
+			<li>owl.carousel.css</li> 
+			<li>main.css </li>
+	        <li>responsive.css</li>
+	  </ol>
+
+	  
+<p>&nbsp;</p>
+	  <hr>
+		
+		<h3 id="javascript"><strong>D) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme use these Javascript files:</p>
+		
+		<ol>
+		  <li>jQuery<br>
+		    jQuery is a Javascript library that greatly reduces the amount of code that you must write. jQuery use these javascript files:
+		    <pre>
+            	bootstrap.min.js
+                smooth-scroll.min.js
+                owl.carousel.min.js
+                jquery.ajaxchimp.min.js
+                jquery-1.12.4.min.js
+                jquery.mb.YTPlayer.min.js
+                owl.carousel.min.js
+                venobox.min.js
+                wow.min.js
+                jquery.counterup.min.js
+                main.js
+            </pre>
+		    You can edit the contact.js files. for setting contact form
+		    <br>
+            <br>
+		  </li>
+	  </ol>
+		
+<hr>
+		
+		<h3 id="credits"><strong>F) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		<ol>
+			<li><a href="http://getbootstrap.com" target="_blank">Bootstrap 3.3</a></li>
+			<li><a href="http://www.owlcarousel.owlgraphic.com" target="_blank">OWL Carousel</a></li>
+			<li><a href="https://wowjs.uk/" target="_blank">WOW JS</a></li>
+			<li><a href="http://veno.es/venobox/" target="_blank">VenoBox</a></li>
+			<li><a href="https://github.com/cferdinandi/smooth-scroll" target="_blank">Smooth Scroll</a></li>
+			<li><a href="https://github.com/pupunzi/jquery.mb.YTPlayer/wiki" target="_blank">YTPlayer</a></li>
+			<li><a href="http://plugins.jquery.com/ajaxchimp/" target="_blank">AjaxChimp</a></li>
+		</ol>
+	    <p>
+      
+    <hr>
+        <h3 id="php"><strong>G) PHP Code Explanation </strong> - <a href="#toc">top</a></h3>
+        <p>There are only one php code for contact page which is contact.php, open this file and change the email and subject on line 24 and line 27.
+         No need to edit other code unless you really want to.
+  <hr>
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist.</p> 
+		
+	  <p class="append-bottom alt large"><strong>ThemeEaster</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div>
+<!-- end div .container -->
+	<script type="text/javascript" src="syntax-highlighter/scripts/shCore.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushXml.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushCss.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushJScript.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushPhp.js"></script> 
+	<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
+</body>
+</html>
