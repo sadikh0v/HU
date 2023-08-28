@@ -868,11 +868,10 @@ h2 {
 .client-in ul li {
     list-style: none;
     display: inline-block;
-    width: 200px;
-    height: 100px;
+    height: 150px;
     position: relative;
     overflow: hidden;
-    margin: 3rem 4rem;
+    margin: 3rem 2rem;
     box-shadow: 0px 0px 0px -10px black;
     transition: .5s;
 }
