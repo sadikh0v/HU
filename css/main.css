@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900");
+@import url('https://fonts.cdnfonts.com/css/montserrat');
 @import url("https://fonts.cdnfonts.com/css/noto-sans");
 
 * {
@@ -8,10 +8,8 @@
 
 body {
     background-color: #fff;
-    font-family: "Noto Sans", sans-serif;
-    font-size: 15px;
+    font-family: 'Montserrat', "Noto Sans", sans-serif;
     line-height: 23px;
-    color: #777;
     font-weight: 400;
     position: relative;
     overflow-x: hidden;
@@ -23,9 +21,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Montserrat', "Noto Sans", sans-serif;
     -webkit-font-smoothing: antialiased;
-    color: #333;
 }
 
 h1 {
@@ -33,7 +30,6 @@ h1 {
     font-weight: 400;
     line-height: 1.2;
     margin: 0 0 10px;
-    color: #222;
     letter-spacing: -0.05em;
 }
 
@@ -379,7 +375,7 @@ button {
 
 .default-btn {
     background-color: #4da351;
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Montserrat', "Noto Sans", sans-serif;
     font-size: 11px;
     letter-spacing: 2px;
     font-weight: 900;
@@ -461,14 +457,14 @@ button {
 .navbar-header .brand {
     font-size: 25px;
     color: #333;
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Montserrat', "Noto Sans", sans-serif;
     letter-spacing: -1px;
     font-weight: 600;
     margin-left: 13px;
 }
 
 .navbar-brand img {
-    width: 10rem;
+    width: 15rem;
 }
 
 
@@ -489,7 +485,7 @@ ul.nav > li {
 
 ul.nav > li > a {
     color: #777;
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Montserrat', "Noto Sans", sans-serif;
     display: inline-block;
     vertical-align: middle;
     padding: 0 10px;
@@ -590,75 +586,54 @@ ul.nav > li > a.active {
    ========================================================================== */
 
 .hero-section {
-    background-color: #fff;
+}
+
+.hero-section__container {
     position: relative;
-    height: 580px;
-    display: flex;
-    align-items: center;
-    z-index: 1;
 }
 
-.hero-section img {
-    width: 100%;
+.hero-section__row {
+
 }
 
-.hero-content h1,
-.hero-content p {
-    margin-bottom: 20px;
+.hero-section__row_text {
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    text-align: start;
+    color: white;
 }
 
-.hero-content h1 {
-    font-size: 40px;
+.hero-section__row_text h1 {
+    font-size: 52px;
+    font-weight: 600;
 }
 
-.hero-cam {
-    animation-name: cam-animation;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-name: cam-animation;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
+.hero-section__row_text p {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 2rem;
 }
 
-/*Cam Animation*/
-@-webkit-keyframes cam-animation {
-    0% {
-        -webkit-transform: translateY(-20px);
-        transform: translateY(-20px);
+@media (max-width: 768px) {
+    .hero-section__container {
+        width: 100%;
     }
-    50% {
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
-    }
-    100% {
-        -webkit-transform: translateY(-25px);
-        transform: translateY(-25px);
+
+    .hero-section__row_text {
+        width: 100%;
+        padding: 1rem;
     }
 }
 
-@keyframes cam-animation {
-    0% {
-        -webkit-transform: translateY(-20px);
-        transform: translateY(-20px);
-    }
-    50% {
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
-    }
-    100% {
-        -webkit-transform: translateY(-20px);
-        transform: translateY(-20px);
-    }
-}
 
 /* ==========================================================================
    Promo Section
    ========================================================================== */
 
 .promo-section {
-    background: rgb(135 0 135);
+
 }
 
 .promo-wrap {
@@ -667,11 +642,11 @@ ul.nav > li > a.active {
 .promo-content {
     padding: 30px 15px;
     border: 1px solid #ddd;
-    border-radius: 0.5rem;
+    border-radius: 1.2rem;
     overflow: hidden;
     height: 20rem;
     transition: all 0.2s ease-in-out;
-    background: whitesmoke;
+    background: linear-gradient(180deg, #4da351, #3b803e);
 }
 
 .promo-content:hover {
@@ -682,17 +657,19 @@ ul.nav > li > a.active {
 
 .promo-content i {
     font-size: 40px;
-    color: #870087;
     margin-bottom: 15px;
+    color: white;
 }
 
 .promo-content h3 {
     margin-bottom: 5px;
+    color: white;
 }
 
 .promo-content p {
     margin-bottom: 0;
     line-height: 25px;
+    color: white;
 }
 
 .promo-main-content h2 {
@@ -714,9 +691,17 @@ ul.nav > li > a.active {
     position: relative;
 }
 
-.comment-container h2, h3 {
+.comment-container h2 {
     text-align: center;
     margin: 2rem 0;
+}
+
+.comment-container h3 {
+    text-align: center;
+    margin: 2rem 0;
+    color: rgb(135 0 135);
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 .comment-container:not(:first-child) {
@@ -727,12 +712,18 @@ ul.nav > li > a.active {
 .comment-card {
     padding: 20px;
     border: 1px solid rgba(0, 0, 0, 0.3);
-    border-radius: .5rem;
+    border-radius: 1rem;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
     min-width: 100%;
     margin-bottom: 2rem;
+    color: black;
     transition: all 0.2s ease-in-out;
+    background-image: url("../img/1.png");
+    background-size: 130% 130%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 
 .comment-card:hover {
     transform: scale(1.05);
@@ -742,6 +733,7 @@ ul.nav > li > a.active {
 
 .comment-card h4, p {
     margin-bottom: 1rem;
+    color: white;
 }
 
 
@@ -756,7 +748,9 @@ ul.nav > li > a.active {
 }
 
 .how-it-works-section:before {
-    background: #870087;
+    background-image: url("../img/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     content: "";
     position: absolute;
     width: 100%;
@@ -826,8 +820,11 @@ h2 {
 
     .video-1,
     .video-2 {
-        margin: 2rem 0;
+        margin: 0 auto;
+        margin-bottom: 1rem;
     }
+
+    .
 }
 
 
@@ -842,8 +839,8 @@ h2 {
     margin: 2rem 0;
 }
 
-.client-wrap h1 {
-    font-size: 40px;
+.client-wrap h2 {
+    font-size: 24px;
     text-align: center;
 }
 
@@ -858,34 +855,68 @@ h2 {
 .client-in {
     width: 100%;
     height: auto;
+    margin: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.client-in ul {
-    padding: 0;
-    margin: 0;
+.client-in__item1,
+.client-in__item2,
+.client-in__item3,
+.client-in__item4,
+.client-in__item5 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 100px;
+    width: 200px;
+    height: 200px;
+    margin: 0 3rem;
+    -webkit-filter: grayscale(100%);
 }
 
-.client-in ul li {
-    list-style: none;
-    display: inline-block;
-    height: 150px;
-    position: relative;
-    overflow: hidden;
-    margin: 3rem 2rem;
-    box-shadow: 0px 0px 0px -10px black;
-    transition: .5s;
-}
-
-.client-in ul li img {
-    width: 100%;
-    height: 100%;
-    transition: .1s;
-    -webkit-filter: grayscale(1);
-}
-
-.client-in ul li:hover img {
-    transition: .5s;
+.client-in__item1:hover,
+.client-in__item2:hover,
+.client-in__item3:hover,
+.client-in__item4:hover,
+.client-in__item5:hover {
     -webkit-filter: grayscale(0);
+}
+
+.client-in__item1 {
+    background-image: url("../img/ateshgah.png");
+}
+
+.client-in__item2 {
+    background-image: url("../img/atb.png");
+}
+
+.client-in__item3 {
+    background-image: url("../img/azersigorta.png");
+}
+
+.client-in__item4 {
+    background-image: url("../img/landau.png");
+}
+
+.client-in__item5 {
+    background-image: url("../img/agroup.png");
+}
+
+@media screen and (max-width: 978px) {
+    .client-in {
+        display: block;
+    }
+
+    .client-in__item1,
+    .client-in__item2,
+    .client-in__item3,
+    .client-in__item4,
+    .client-in__item5 {
+        margin: 0 auto;
+        -webkit-filter: grayscale(0);
+    }
 }
 
 /* ==========================================================================
@@ -967,3 +998,4 @@ h2 {
     opacity: 0.8;
     color: #fff;
 }
+
