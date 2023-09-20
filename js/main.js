@@ -35,17 +35,29 @@
         label: "",
         allowParentLinks: true,
     });
-
-
-    /*=========================================================================
-      Scroll To Top
-  =========================================================================*/
-
-    $(window).on("scroll", function () {
-        if ($(this).scrollTop() > 100) {
-            $("#scroll-to-top").fadeIn();
-        } else {
-            $("#scroll-to-top").fadeOut();
-        }
-    });
 })(jQuery);
+
+/*=========================================================================
+  Scroll To Top
+=========================================================================*/
+
+const scrollTop = document.querySelector('.scrollTop')
+window.addEventListener('scroll', checkHeight)
+
+function checkHeight() {
+    if (window.scrollY > 200) {
+        scrollTop.style.display = 'flex'
+    } else {
+        scrollTop.style.display = 'none'
+    }
+}
+
+scrollTop.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+
+    })
+})
+
+
