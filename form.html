@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Sintex product landing page template"/>
+    <meta name="author" content="ThemeEaster"/>
+
+    <title>HU Reacts Əlaqə</title>
+    <link rel="stylesheet" href="css/form.css"/>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("eCKX-TR0tnaUFzjdr");
+        })();
+    </script>
+</head>
+<body>
+<div class="container">
+    <form name="form">
+        <h3>Bizimlə Əlaqə</h3>
+        <input type="text" id="fullName" name="answer_name" placeholder="Ad Soyad" required autofocus> <br/>
+        <input type="email" id="email_id" name="answer_email" placeholder="Elektron poçt ünvanı" required> <br/>
+        <input class="phone" type="number" id="phone_id" name="answer_phone" placeholder="Əlaqə nömrəsi" required> <br/>
+        <textarea id="message" name="answer_message" placeholder="Sorğunuzu geyd edin" required></textarea> <br/>
+        <button onclick="sendMail()">Müraciyət et</button>
+    </form>
+    <a href="index.html" class="logo">
+        <img src="img/logo-main.png" alt="HU Reacts">
+    </a>
+</div>
+
+
+<script src="js/form.js"></script>
+</body>
