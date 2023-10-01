@@ -7,6 +7,7 @@
     <meta name="author" content="ThemeEaster"/>
 
     <title>HU Reacts Əlaqə</title>
+    <link rel="shortcut icon" href="img/logo-3.png" type="image/x-icon">
     <link rel="stylesheet" href="css/form.css"/>
     <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
@@ -19,19 +20,19 @@
 </head>
 <body>
 <div class="container">
-    <form name="form">
+    <form id="form">
         <h3>Bizimlə Əlaqə</h3>
-        <input type="text" id="fullName" name="answer_name" placeholder="Ad Soyad" required autofocus> <br/>
-        <input type="email" id="email_id" name="answer_email" placeholder="Elektron poçt ünvanı" required> <br/>
-        <input class="phone" type="number" id="phone_id" name="answer_phone" placeholder="Əlaqə nömrəsi" required> <br/>
-        <textarea id="message" name="answer_message" placeholder="Sorğunuzu geyd edin" required></textarea> <br/>
-        <button onclick="sendMail()">Müraciyət et</button>
+        <input type="text" id="fullName" placeholder="Ad Soyad" required autofocus> <br/>
+        <input type="email" id="emailId" placeholder="Elektron poçt ünvanı" required> <br/>
+        <input class="phone" type="number" id="number" placeholder="Əlaqə nömrəsi" required>
+        <br/>
+        <textarea id="message" placeholder="Sorğunuzu geyd edin" required></textarea> <br/>
+        <div class="btn" onclick="sendMail()">Müraciyət et</div>
     </form>
-    <a href="index.html" class="logo">
-        <img src="img/logo-main.png" alt="HU Reacts">
-    </a>
 </div>
 
+<script>
 
+</script>
 <script src="js/form.js"></script>
 </body>
