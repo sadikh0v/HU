@@ -125,3 +125,7 @@ function sendMail() {
         alert(msg)
     }
 }
+
+function mainPage() {
+    window.location.href = 'index.html'
+}

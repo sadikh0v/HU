@@ -53,25 +53,58 @@ form input, form textarea {
     display: none;
 }
 
+.formBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-form .btn {
+.btn {
     padding: 15px;
     background: #4da351;
-    color: #fff;
+    color: #f5f5f5;
     font-size: 18px;
-    border: 0;
+    border: 1px solid #4da351;
     outline: none;
     cursor: pointer;
     width: 150px;
     margin: 20px auto;
     border-radius: 30px;
+    transition: all 1s ease;
+    box-shadow: 4px 23px 100px -8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    color: #4da351;
+    background: #f5f5f5;
 }
 
 .error {
     border: 2px solid red;
     border-radius: 5px;
     color: red;
-    background-color: #fff;
+    background-color: #f5f5f5;
+}
+
+.btnPrev {
+    padding: 15px;
+    background: #f5f5f5;
+    color: #eb5a40;
+    font-size: 18px;
+    border: 1px solid #eb5a40;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto;
+    border-radius: 30px;
+    text-align: center;
+    transition: all 1s ease;
+    box-shadow: 4px 23px 100px -8px rgba(0, 0, 0, 0.2);
+}
+
+.btnPrev:hover {
+    color: #f5f5f5;
+    background: #eb5a40;
 }
 
 @keyframes gradient {

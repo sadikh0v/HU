@@ -3,7 +3,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding: 5rem;
+    scroll-padding: 4rem;
 }
 
 * {
@@ -779,54 +779,21 @@ ul.nav > li > a.active {
     color: white;
 }
 
-.video-container {
+.example-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.example-container a {
+    border: 2px dashed #eb5a40;
+    margin: 4rem 3rem 0 3rem;
+    width: 10rem;
+    height: 10rem;
 }
 
 h2 {
     text-align: center;
-}
-
-.video {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.video-1,
-.video-2 {
-    width: 33rem;
-    height: 20rem;
-    margin: 2rem;
-    backdrop-filter: blur(10px);
-    -webkit-animation-filter: blur(10px);
-    border-radius: 20px;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    transition: all 0.8s ease;
-}
-
-.video-1:hover,
-.video-2:hover {
-    opacity: 0.8;
-}
-
-.video-1 iframe, .video-2 iframe {
-    width: 33rem;
-    height: 20rem;
-    border-radius: 20px;
-}
-
-@media screen and (max-width: 978px) {
-    .video {
-        display: block;
-    }
-
-    .video-1,
-    .video-2 {
-        margin: 0 auto;
-        margin-bottom: 1rem;
-    }
-
-    .
 }
 
 /* ==========================================================================
