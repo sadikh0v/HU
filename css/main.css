@@ -834,6 +834,7 @@ ul.nav > li > a.active {
 }
 
 .content-img {
+    position: relative;
     width: 300px;
     height: auto;
     z-index: 2;
@@ -841,35 +842,17 @@ ul.nav > li > a.active {
 
 .img-exm {
     position: absolute;
-    top: 52px;
+    top: 55px;
+    right: 90px;
     width: 180px;
     height: auto;
     z-index: 1;
 }
 
 .example-content h4 {
-    font-size: 1em;
+    font-size: 1.2em;
     z-index: 1;
     margin: 10px 0;
-}
-
-.example-content a {
-    position: relative;
-    display: inline-block;
-    padding: 8px 20px;
-    border: 1px solid #1c7430;
-    background: #1c7430;
-    margin-top: 15px;
-    border-radius: 20px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 400;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.example-content a:hover {
-    color: #4da351;
-    background: #fff;
 }
 
 h2 {
