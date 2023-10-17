@@ -782,14 +782,94 @@ ul.nav > li > a.active {
 .example-container {
     display: flex;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    margin: 0 auto;
 }
 
-.example-container a {
-    border: 2px dashed #eb5a40;
-    margin: 4rem 3rem 0 3rem;
-    width: 10rem;
-    height: 10rem;
+.example-card {
+    margin: 20px 10px;
+}
+
+.example-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.example-content {
+    position: relative;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-circle {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    top: 10px;
+    transition: transform 1s;
+}
+
+.content-circle2 {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    top: 30px;
+    transition: transform 1s;
+}
+
+.content-circle3 {
+    position: absolute;
+    width: 248px;
+    height: 248px;
+    top: 45px;
+    transition: transform 1s;
+}
+
+.content-img {
+    width: 300px;
+    height: auto;
+    z-index: 2;
+}
+
+.img-exm {
+    position: absolute;
+    top: 52px;
+    width: 180px;
+    height: auto;
+    z-index: 1;
+}
+
+.example-content h4 {
+    font-size: 1em;
+    z-index: 1;
+    margin: 10px 0;
+}
+
+.example-content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    border: 1px solid #1c7430;
+    background: #1c7430;
+    margin-top: 15px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.example-content a:hover {
+    color: #4da351;
+    background: #fff;
 }
 
 h2 {
@@ -843,6 +923,14 @@ h2 {
     margin: 0 3rem;
 }
 
+/*.client-in__item1:hover,*/
+/*.client-in__item2:hover,*/
+/*.client-in__item3:hover,*/
+/*.client-in__item4:hover,*/
+/*.client-in__item5:hover {*/
+
+/*}*/
+
 
 .client-in__item1 {
     background-image: url("../img/ateshgah.png");
@@ -878,7 +966,6 @@ h2 {
     .client-in__item4,
     .client-in__item5 {
         margin: 0 auto;
-        -webkit-filter: grayscale(0);
     }
 }
 
