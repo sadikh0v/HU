@@ -86,3 +86,19 @@ function reChangeItem(items) {
         circle.style.transform = 'scale(1)';
     });
 }
+
+/*=========================================================================
+  Mail
+=========================================================================*/
+
+
+const link = document.getElementById("link");
+link.onclick = () => {
+    let recipient = "info";
+    let at = String.fromCharCode(64);
+    let dotcom = "hureacts.com";
+    let mail = "mailto:";
+    window.open(mail + recipient + at + dotcom);
+}
+
+

@@ -448,7 +448,6 @@ button {
     border: medium none;
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
-    -ms-border-radius: 0;
     border-radius: 0;
     margin: 0;
     position: relative;
@@ -508,7 +507,7 @@ ul.nav > li > a.active {
     opacity: 1;
 }
 
-.mainmenu .default-btn {
+.main-menu .default-btn {
     padding: 10px 30px;
     display: inline-block;
     margin-left: 20px;
@@ -621,14 +620,17 @@ ul.nav > li > a.active {
     line-height: 2rem;
 }
 
-@media (max-width: 768px) {
-    .hero-section__container {
+@media (max-width: 576px) {
+    .hero-section__row_text {
         width: 100%;
     }
 
-    .hero-section__row_text {
-        width: 100%;
-        padding: 1rem;
+    .hero-section__row_text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section__row_text p {
+        font-size: 1.5rem;
     }
 }
 
@@ -911,7 +913,7 @@ h2 {
 /*.client-in__item3:hover,*/
 /*.client-in__item4:hover,*/
 /*.client-in__item5:hover {*/
-
+/*    */
 /*}*/
 
 
@@ -954,7 +956,7 @@ h2 {
 
 
 /* ==========================================================================
-   Footer Section
+   `Footer` Section
    ========================================================================== */
 
 .footer-section {
@@ -966,9 +968,40 @@ h2 {
     padding: 30px 0;
 }
 
-.footer-section img {
-    width: 11rem;
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2rem;
+}
+
+.footer-link p {
+    color: #777;
+    cursor: pointer;
+    margin: 0 auto;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.footer-link p:active,
+.footer-link p:focus,
+.footer-link p:hover {
+    background: none;
+    color: #4da351;
+    opacity: 1;
+}
+
+.footer-section img {
+    width: 13rem;
+}
+
 
 /* ==========================================================================
    Scroll To Top
