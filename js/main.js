@@ -92,13 +92,13 @@ function reChangeItem(items) {
 =========================================================================*/
 
 
-const link = document.getElementById("link");
-link.onclick = () => {
-    let recipient = "info";
-    let at = String.fromCharCode(64);
-    let dotcom = "hureacts.com";
-    let mail = "mailto:";
-    window.open(mail + recipient + at + dotcom);
-}
+// const link = document.getElementById("link");
+// link.onclick = () => {
+//     let recipient = "info";
+//     let at = String.fromCharCode(64);
+//     let dotcom = "hureacts.com";
+//     let mail = "mailto:";
+//     window.open(mail + recipient + at + dotcom);
+// }
 
 
