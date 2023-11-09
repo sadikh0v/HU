@@ -586,13 +586,20 @@ ul.nav > li > a.active {
    ========================================================================== */
 
 .hero-section {
+  margin-top: 5rem;
 }
 
 .hero-section__container {
   position: relative;
 }
 
-.hero-section__row {
+.hero-section__row_img {
+  background-image: url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  height: 30rem;
 }
 
 .hero-section__row_text {
@@ -618,27 +625,30 @@ ul.nav > li > a.active {
 @media (max-width: 768px) {
   .hero-section {
     margin-bottom: -13rem;
+    margin-top: -3.5rem;
   }
   .hero-section__row_img {
-    height: 12rem;
+    background-image: url(../img/mobile.jpg);
+    height: 35rem;
+    width: 100%;
   }
   .hero-section__row_text {
     position: relative;
     margin: auto;
     text-align: start;
     color: white;
-    transform: translate(-35%, -150%);
+    transform: translate(-35%, -450%);
   }
 
   .hero-section__row_text h1 {
     display: inline;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.2rem;
   }
 
   .hero-section__row_text p {
     display: inline;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.2rem;
   }
 
