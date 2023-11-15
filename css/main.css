@@ -389,8 +389,7 @@ button {
 
 @media (max-width: 768px) {
   .default-btn {
-    margin: 0.5rem 0;
-    margin-left: 5.5rem !important;
+    margin: 1rem 5rem;
   }
 }
 
@@ -506,7 +505,6 @@ ul.nav > li > a.active {
 .main-menu .default-btn {
   padding: 10px 30px;
   display: inline-block;
-  margin-left: 20px;
 }
 
 .menu-btn {
@@ -604,9 +602,9 @@ ul.nav > li > a.active {
 
 .hero-section__row_text {
   position: absolute;
-  top: 45%;
-  left: 35%;
-  transform: translate(-50%, -50%);
+  top: 15%;
+  left: 15%;
+  display: inline;
   text-align: start;
   color: white;
 }
@@ -622,10 +620,13 @@ ul.nav > li > a.active {
   line-height: 2rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   .hero-section {
     margin-bottom: -13rem;
     margin-top: -3.5rem;
+  }
+  .hero-section__row {
+    margin-bottom: 4rem;
   }
   .hero-section__row_img {
     background-image: url(../img/mobile.jpg);
@@ -633,11 +634,11 @@ ul.nav > li > a.active {
     width: 100%;
   }
   .hero-section__row_text {
-    position: relative;
-    margin: auto;
-    text-align: start;
+    position: absolute;
+    display: inline;
+    top: 10%;
+    left: 1%;
     color: white;
-    transform: translate(-35%, -450%);
   }
 
   .hero-section__row_text h1 {

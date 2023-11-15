@@ -21,10 +21,6 @@
     height: auto;
     padding: 60px 0;
   }
-  .mainmenu .default-btn {
-    padding: 10px 15px;
-    margin-left: 10px;
-  }
   .content-details h2 br,
   .hero-content h1 br,
   .hero-content p br {
@@ -82,11 +78,6 @@
   .navbar-brand {
     padding: 11px 0;
     z-index: 10;
-  }
-  .mainmenu .default-btn {
-    margin-left: 0;
-    margin-right: 50px;
-    z-index: 1;
   }
   .menu-btn,
   .menu-wrap ul.nav {
