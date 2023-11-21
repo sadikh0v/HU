@@ -109,7 +109,7 @@ function sendMail() {
     }
 
     if (isValid) {
-        emailjs.send('service_6whz5p9', 'template_fm1rz9o', params)
+        emailjs.send('service_bemxa2v', 'template_m3tzlxj', params)
             .then(function () {
                 callAlert('Müraciətiniz göndərildi! Təşəkkür edirik!')
                 window.location.href = 'index.html'
@@ -119,7 +119,7 @@ function sendMail() {
                 alert('E-poçt göndərilərkən xəta baş verdi. Zəhmət olmasa bir az sonra yenə cəhd edin.')
             });
     }
-    callAlert('Zəhmət olmasa, bütün xanaları düzgün doldurun.')
+    // callAlert('Zəhmət olmasa, bütün xanaları düzgün doldurun.')
 
     function callAlert(msg) {
         alert(msg)
